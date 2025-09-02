@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Medical Report Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+
+</head>
+<body>
+    <h1>Enter Patient Medical Details</h1>
+    <form action="/" method="POST">
+        <label for="disease_name">Disease Name:</label><br>
+        <input type="text" id="disease_name" name="disease_name" required><br><br>
+
+        <label for="years">Years (duration):</label><br>
+        <input type="text" id="years" name="years" required><br><br>
+
+        <label for="age">Age:</label><br>
+        <input type="number" id="age" name="age" required><br><br>
+
+        <label for="history">Family Medical History:</label><br>
+        <input type="text" id="history" name="history" required><br><br>
+
+        <label for="addiction">Addiction:</label><br>
+        <input type="text" id="addiction" name="addiction" required><br><br>
+
+        <label for="medication">Medication (current):</label><br>
+        <input type="text" id="medication" name="medication" required><br><br>
+
+        <input type="submit" value="Get Medical Report" class="Get_Medical_Report">
+    </form>
+
+    <a href="index.html"></a>
+</body>
+</html>
